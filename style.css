@@ -1,0 +1,1225 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all 0.05s ease-in-out;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: black;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  background-color: orangered;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header h1 {
+  color: #FFF;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header h2 {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.education,
+.skills,
+.experience,
+.projects {
+  margin-top: 40px;
+  color: #FFF;
+}
+
+h3 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #FFF;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: #FFF;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #ff4800;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  left: 400px;
+  z-index: 1;
+  background-color: orangered;
+  color: white;
+  width: 35%;
+  height: 5%;
+  margin-top: 15px;
+  padding-right: 35px;
+  border-radius: 30px;
+}
+nav ul {
+  display: flex;
+  text-align: center;
+  gap: 40px;
+}
+nav ul li {
+  text-align: center;
+  font-size: 20px;
+  padding-top: 10px;
+  text-decoration: none;
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+  font-size: 20px;
+  color: #FFF;
+}
+
+#hero {
+  position: relative;
+  height: 100vh;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 300px;
+}
+#hero .main1 {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+#hero .main1 .icons {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+#hero .main1 .icons img {
+  width: 40%;
+}
+#hero .main1 .text h3 {
+  font-size: 25px;
+}
+#hero .main1 .text h1 {
+  color: orangered;
+  font-weight: 700;
+  font-size: 80px;
+}
+#hero .main1 .text #text {
+  margin-left: 70px;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 500;
+}
+#hero .pic {
+  width: 20%;
+}
+#hero .pic img {
+  margin-top: 50px;
+  width: 100%;
+}
+
+#About {
+  height: 90vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#About .card {
+  background-color: orangered;
+  width: 60%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#About .card h1 {
+  text-align: center;
+}
+#About .card h1 span {
+  font-size: 40px;
+  color: #FFF;
+}
+#About .card p {
+  width: 90%;
+  font-size: 25px;
+}
+
+#projects {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  padding-bottom: 100px;
+}
+#projects .wrapper {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#projects .wrapper .main {
+  width: 30%;
+}
+#projects .wrapper .main h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+#projects .wrapper .main h1 span {
+  color: orangered;
+}
+#projects .wrapper .main .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orangered;
+  width: 60%;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+#projects .wrapper .main .card .pic {
+  text-align: center;
+  width: 80%;
+}
+#projects .wrapper .main .card .pic img {
+  margin-top: 20px;
+  width: 60%;
+}
+#projects .wrapper .main .card .pic .text h3 {
+  color: #fff;
+  margin-bottom: 50px;
+}
+#projects .wrapper .main .card .pic .text .btns {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+#projects .wrapper .main .card .pic .text .btns button {
+  padding: 5px 10px;
+  background-color: orangered;
+  border-radius: 15px;
+  color: #fff;
+  border: 2px solid white;
+}
+#projects .wrapper .main2 {
+  width: 30%;
+}
+#projects .wrapper .main2 h1 {
+  color: #fff;
+  margin-bottom: 20px;
+}
+#projects .wrapper .main2 h1 span {
+  color: orangered;
+}
+#projects .wrapper .main2 .card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: orangered;
+  width: 60%;
+  padding-bottom: 20px;
+  border-radius: 10px;
+}
+#projects .wrapper .main2 .card .pic {
+  text-align: center;
+  width: 80%;
+}
+#projects .wrapper .main2 .card .pic img {
+  margin-top: 20px;
+  width: 60%;
+}
+#projects .wrapper .main2 .card .pic .text h3 {
+  color: #fff;
+  margin-bottom: 50px;
+}
+#projects .wrapper .main2 .card .pic .text .btns {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+#projects .wrapper .main2 .card .pic .text .btns button {
+  padding: 5px 10px;
+  background-color: orangered;
+  border-radius: 15px;
+  color: #fff;
+  border: 2px solid white;
+}
+
+#Myskill {
+  background-color: black;
+}
+#Myskill h1 {
+  color: #fff;
+}
+#Myskill h1 span {
+  color: orangered;
+}
+#Myskill .container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  position: relative;
+  max-width: 500%;
+  width: 100%;
+  margin: 0 0;
+  padding: 10px 20px;
+  border-radius: 7px;
+}
+#Myskill .container .skill-box {
+  margin: 25px 0;
+  width: 75%;
+}
+#Myskill .container .skill-box .skill-bar {
+  height: 20px;
+  border-radius: 6px;
+  width: 100%;
+  background: orangered;
+  margin-top: 15px;
+}
+#Myskill .container .skill-box .skill-bar .skill-per {
+  animation: progress 0.4s ease-in-out forwards;
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 95%;
+  background: #4070f4;
+  opacity: 0;
+}
+@keyframes progress {
+  100% {
+    opacity: 1;
+  }
+}
+#Myskill .container .skill-box .skill-bar .skill-per .tooltip {
+  position: absolute;
+  margin-bottom: 15px;
+  right: -14px;
+  background-color: #4070f4;
+  top: -46px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  z-index: 5;
+}
+#Myskill .container .skill-box .skill-bar .skill-per .tooltip::before {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  left: 50%;
+  content: "";
+  top: 100%;
+  background-color: #4070f4;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -1;
+}
+#Myskill .container .skill-box .skill-bar .skill-per-js {
+  animation: progress 0.4s ease-in-out forwards;
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 65%;
+  background: #4070f4;
+  opacity: 0;
+}
+@keyframes progress {
+  100% {
+    opacity: 1;
+  }
+}
+#Myskill .container .skill-box .skill-bar .skill-per-js .tooltip {
+  position: absolute;
+  margin-bottom: 15px;
+  right: -14px;
+  background-color: #4070f4;
+  top: -46px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  z-index: 1;
+}
+#Myskill .container .skill-box .skill-bar .skill-per-js .tooltip::before {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  left: 50%;
+  content: "";
+  top: 100%;
+  background-color: #4070f4;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -1;
+}
+#Myskill .container .skill-box .skill-bar .skill-per-bootstrap {
+  animation: progress 0.4s ease-in-out forwards;
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 80%;
+  background: #4070f4;
+  opacity: 0;
+}
+@keyframes progress {
+  100% {
+    opacity: 1;
+  }
+}
+#Myskill .container .skill-box .skill-bar .skill-per-bootstrap .tooltip {
+  position: absolute;
+  margin-bottom: 15px;
+  right: -14px;
+  background-color: #4070f4;
+  top: -46px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  z-index: 1;
+}
+#Myskill .container .skill-box .skill-bar .skill-per-bootstrap .tooltip::before {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  left: 50%;
+  content: "";
+  top: 100%;
+  background-color: #4070f4;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -1;
+}
+#Myskill .container .skill-box .skill-bar .skill-per-css {
+  animation: progress 0.4s ease-in-out forwards;
+  position: relative;
+  display: block;
+  height: 100%;
+  width: 85%;
+  background: #4070f4;
+  opacity: 0;
+}
+@keyframes progress {
+  100% {
+    opacity: 1;
+  }
+}
+#Myskill .container .skill-box .skill-bar .skill-per-css .tooltip {
+  position: absolute;
+  margin-bottom: 15px;
+  right: -14px;
+  background-color: #4070f4;
+  top: -46px;
+  font-size: 20px;
+  font-weight: 500;
+  color: #fff;
+  padding: 2px 6px;
+  border-radius: 3px;
+  z-index: 1;
+}
+#Myskill .container .skill-box .skill-bar .skill-per-css .tooltip::before {
+  height: 15px;
+  width: 15px;
+  position: absolute;
+  left: 50%;
+  content: "";
+  top: 100%;
+  background-color: #4070f4;
+  transform: translateY(-50%) rotate(45deg);
+  z-index: -1;
+}
+#Myskill .container .title {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+}
+
+#Contact {
+  padding-top: 100px;
+  padding-bottom: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+#Contact .card {
+  border-radius: 10px;
+  padding-left: 25px;
+  width: 70%;
+  background-color: orangered;
+}
+#Contact .card p {
+  color: #fff;
+}
+#Contact .card h1 {
+  color: #fff;
+}
+#Contact .card form {
+  display: flex;
+  flex-direction: column;
+}
+#Contact .card form input {
+  width: 50%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: none;
+}
+#Contact .card form .massage {
+  padding-bottom: 70px;
+}
+#Contact .card form .button {
+  width: 15%;
+  border-radius: 15px;
+  color: #fff;
+  background-color: orangered;
+  border: 2px solid white;
+}
+
+@media (max-width: 1024px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 250px;
+    z-index: 1;
+    background-color: orangered;
+    color: white;
+    width: 50%;
+    height: 5%;
+    margin-top: 15px;
+    padding-right: 35px;
+    border-radius: 30px;
+  }
+  nav ul {
+    display: flex;
+    text-align: center;
+    gap: 40px;
+  }
+  nav ul li {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    text-decoration: none;
+    list-style: none;
+  }
+  #hero {
+    position: relative;
+    height: 60vh;
+    background-color: black;
+    color: white;
+    display: flex;
+  }
+  #hero .main1 {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  #hero .main1 .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #hero .main1 .icons img {
+    width: 40%;
+  }
+  #hero .main1 .text h3 {
+    font-size: 25px;
+  }
+  #hero .main1 .text h1 {
+    color: orangered;
+    font-weight: 700;
+    font-size: 80px;
+  }
+  #hero .main1 .text .secondH3 {
+    margin-left: 70px;
+  }
+  #hero .pic {
+    width: 100%;
+  }
+  #hero .pic img {
+    width: 50%;
+  }
+  #About {
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #About .card {
+    background-color: orangered;
+    width: 60%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #About .card h1 {
+    text-align: center;
+  }
+  #About .card h1 span {
+    font-size: 40px;
+    color: #FFF;
+  }
+  #About .card p {
+    width: 90%;
+    font-size: 25px;
+  }
+  #projects {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding-bottom: 100px;
+  }
+  #projects .wrapper {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #projects .wrapper .main {
+    width: 30%;
+  }
+  #projects .wrapper .main h1 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  #projects .wrapper .main h1 span {
+    color: orangered;
+  }
+  #projects .wrapper .main .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    width: 60%;
+    padding-bottom: 20px;
+    border-radius: 10px;
+  }
+  #projects .wrapper .main .card .pic {
+    text-align: center;
+    width: 80%;
+  }
+  #projects .wrapper .main .card .pic img {
+    width: 60%;
+  }
+  #projects .wrapper .main .card .pic .text h3 {
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  #projects .wrapper .main .card .pic .text .btns {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  #projects .wrapper .main .card .pic .text .btns button {
+    padding: 5px 10px;
+    background-color: orangered;
+    border-radius: 15px;
+    color: #fff;
+    border: 2px solid white;
+  }
+  #projects .wrapper .main2 {
+    width: 30%;
+  }
+  #projects .wrapper .main2 h1 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  #projects .wrapper .main2 h1 span {
+    color: orangered;
+  }
+  #projects .wrapper .main2 .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    width: 60%;
+    padding-bottom: 20px;
+    border-radius: 10px;
+  }
+  #projects .wrapper .main2 .card .pic {
+    text-align: center;
+    width: 80%;
+  }
+  #projects .wrapper .main2 .card .pic img {
+    width: 60%;
+  }
+  #projects .wrapper .main2 .card .pic .text h3 {
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  #projects .wrapper .main2 .card .pic .text .btns {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+  }
+  #projects .wrapper .main2 .card .pic .text .btns button {
+    padding: 5px 10px;
+    background-color: orangered;
+    border-radius: 15px;
+    color: #fff;
+    border: 2px solid white;
+  }
+}
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 130px;
+    z-index: 1;
+    background-color: orangered;
+    color: white;
+    width: 70%;
+    height: 5%;
+    margin-top: 15px;
+    padding-right: 35px;
+    border-radius: 30px;
+  }
+  nav ul {
+    display: flex;
+    text-align: center;
+    gap: 40px;
+  }
+  nav ul li {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    text-decoration: none;
+    list-style: none;
+  }
+  #hero {
+    position: relative;
+    height: 60vh;
+    background-color: black;
+    color: white;
+    display: flex;
+  }
+  #hero .main1 {
+    display: flex;
+    gap: 30px;
+  }
+  #hero .main1 .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #hero .main1 .icons img {
+    width: 40%;
+  }
+  #hero .main1 .text h3 {
+    font-size: 25px;
+  }
+  #hero .main1 .text h1 {
+    color: orangered;
+    font-weight: 700;
+    font-size: 80px;
+  }
+  #hero .main1 .text .secondH3 {
+    margin-left: 70px;
+  }
+  #hero .pic {
+    display: none;
+    width: 100%;
+  }
+  #hero .pic img {
+    width: 100%;
+  }
+  #About {
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #About .card {
+    background-color: orangered;
+    width: 60%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #About .card h1 {
+    text-align: center;
+  }
+  #About .card h1 span {
+    font-size: 40px;
+    color: #FFF;
+  }
+  #About .card p {
+    width: 90%;
+    font-size: 25px;
+  }
+  #projects {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding-bottom: 100px;
+  }
+  #projects .wrapper {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #projects .wrapper .main {
+    width: 30%;
+  }
+  #projects .wrapper .main h1 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  #projects .wrapper .main h1 span {
+    color: orangered;
+  }
+  #projects .wrapper .main .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    width: 90%;
+    padding-bottom: 20px;
+    border-radius: 10px;
+  }
+  #projects .wrapper .main .card .pic {
+    text-align: center;
+    width: 80%;
+  }
+  #projects .wrapper .main .card .pic img {
+    width: 60%;
+  }
+  #projects .wrapper .main .card .pic .text h3 {
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  #projects .wrapper .main .card .pic .text .btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  #projects .wrapper .main .card .pic .text .btns button {
+    padding: 5px 10px;
+    background-color: orangered;
+    border-radius: 15px;
+    color: #fff;
+    border: 2px solid white;
+  }
+  #projects .wrapper .main2 {
+    width: 30%;
+  }
+  #projects .wrapper .main2 h1 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  #projects .wrapper .main2 h1 span {
+    color: orangered;
+  }
+  #projects .wrapper .main2 .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    width: 90%;
+    padding-bottom: 20px;
+    border-radius: 10px;
+  }
+  #projects .wrapper .main2 .card .pic {
+    text-align: center;
+    width: 80%;
+  }
+  #projects .wrapper .main2 .card .pic img {
+    width: 60%;
+  }
+  #projects .wrapper .main2 .card .pic .text h3 {
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  #projects .wrapper .main2 .card .pic .text .btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  #projects .wrapper .main2 .card .pic .text .btns button {
+    padding: 5px 10px;
+    background-color: orangered;
+    border-radius: 15px;
+    color: #fff;
+    border: 2px solid white;
+  }
+}
+@media (max-width: 425px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 20px;
+    z-index: 1;
+    background-color: orangered;
+    color: white;
+    width: 90%;
+    height: 5%;
+    margin-top: 15px;
+    padding-right: 35px;
+    border-radius: 30px;
+  }
+  nav ul {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+  }
+  nav ul li {
+    text-align: center;
+    font-size: 25px;
+    padding-top: 10px;
+    text-decoration: none;
+    list-style: none;
+  }
+  #hero {
+    position: relative;
+    height: 60vh;
+    background-color: black;
+    color: white;
+    display: flex;
+  }
+  #hero .main1 {
+    display: flex;
+    gap: 30px;
+  }
+  #hero .main1 .icons {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  #hero .main1 .icons img {
+    width: 40%;
+  }
+  #hero .main1 .text #text {
+    margin-left: 5px;
+  }
+  #hero .main1 .text h3 {
+    font-size: 20px;
+  }
+  #hero .main1 .text h1 {
+    color: orangered;
+    font-weight: 700;
+    font-size: 50px;
+  }
+  #hero .main1 .text .secondH3 {
+    margin-left: 70px;
+  }
+  #hero .pic {
+    display: none;
+    width: 100%;
+  }
+  #hero .pic img {
+    width: 100%;
+  }
+  #About {
+    height: 60vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #About .card {
+    background-color: orangered;
+    width: 80%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #About .card h1 {
+    text-align: center;
+    font-size: 30px;
+  }
+  #About .card h1 span {
+    color: #FFF;
+    font-size: 30px;
+  }
+  #About .card p {
+    width: 90%;
+    font-size: 19px;
+  }
+  #projects {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    padding-bottom: 100px;
+  }
+  #projects .wrapper {
+    flex-wrap: wrap;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  #projects .wrapper .main {
+    width: 50%;
+  }
+  #projects .wrapper .main h1 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  #projects .wrapper .main h1 span {
+    color: orangered;
+  }
+  #projects .wrapper .main .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    width: 100%;
+    padding-bottom: 20px;
+    border-radius: 10px;
+  }
+  #projects .wrapper .main .card .pic {
+    text-align: center;
+    width: 80%;
+  }
+  #projects .wrapper .main .card .pic img {
+    width: 60%;
+  }
+  #projects .wrapper .main .card .pic .text h3 {
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  #projects .wrapper .main .card .pic .text .btns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 25px;
+  }
+  #projects .wrapper .main .card .pic .text .btns button {
+    padding: 5px 10px;
+    background-color: orangered;
+    border-radius: 15px;
+    color: #fff;
+    border: 2px solid white;
+  }
+  #projects .wrapper .main2 {
+    width: 50%;
+  }
+  #projects .wrapper .main2 h1 {
+    color: #fff;
+    margin-bottom: 20px;
+  }
+  #projects .wrapper .main2 h1 span {
+    color: orangered;
+  }
+  #projects .wrapper .main2 .card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: orangered;
+    width: 100%;
+    padding-bottom: 20px;
+    border-radius: 10px;
+  }
+  #projects .wrapper .main2 .card .pic {
+    text-align: center;
+    width: 80%;
+  }
+  #projects .wrapper .main2 .card .pic img {
+    width: 60%;
+  }
+  #projects .wrapper .main2 .card .pic .text h3 {
+    color: #fff;
+    margin-bottom: 50px;
+  }
+  #projects .wrapper .main2 .card .pic .text .btns {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+  #projects .wrapper .main2 .card .pic .text .btns button {
+    padding: 5px 10px;
+    background-color: orangered;
+    border-radius: 15px;
+    color: #fff;
+    border: 2px solid white;
+  }
+  #Contact .card form .button {
+    width: 50%;
+    font-size: 15px;
+  }
+}
+@media (max-width: 375px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 10px;
+    z-index: 1;
+    background-color: orangered;
+    color: white;
+    width: 100%;
+    height: 5%;
+    margin-top: 15px;
+    padding-right: 35px;
+    border-radius: 30px;
+  }
+  nav ul {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+  }
+  nav ul li {
+    text-align: center;
+    font-size: 20px;
+    padding-top: 10px;
+    text-decoration: none;
+    list-style: none;
+  }
+}
+#hero .text #text {
+  margin-left: 0;
+}
+
+@media (max-width: 320px) {
+  nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: orangered;
+    color: white;
+    width: 100%;
+    height: 5%;
+    margin-top: 15px;
+    padding-right: 35px;
+    border-radius: 30px;
+  }
+  nav ul {
+    display: flex;
+    text-align: center;
+    gap: 10px;
+  }
+  nav ul li {
+    text-align: center;
+    font-size: 17px;
+    padding-top: 10px;
+    text-decoration: none;
+    list-style: none;
+  }
+  #hero .text #text {
+    font-size: 10px;
+    margin-left: 0;
+  }
+  #About {
+    height: 50vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #About .card {
+    background-color: orangered;
+    width: 80%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #About .card h1 {
+    text-align: center;
+  }
+  #About .card h1 span {
+    font-size: 25px;
+    color: #FFF;
+  }
+  #About .card p {
+    width: 100%;
+    font-size: 18px;
+  }
+}/*# sourceMappingURL=style.css.map */
